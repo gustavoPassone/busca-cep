@@ -1,2 +1,2 @@
 # busca-cep
-Buscando CEP por API usando Javascript
+Buscando CEP com API usando Javascript
