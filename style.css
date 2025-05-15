@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Exo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&family=Zen+Dots&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+}
+
+body {
+    background-image: url(./img/bg.png);
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    & img {
+        margin-top: 32px;
+        width: 150px;
+    }
+}
+
+main {
+    margin-bottom: 32px;
+}
+
+
+.container {
+    margin: auto;
+    margin-top: 20px;
+    max-width: 586px;
+    width: 100%;
+    border: 0.5px solid #ffffff57;
+    border-radius: 12px;
+    background-color: #ffffff03;
+    backdrop-filter: blur(6.7px);
+    padding: 16px;
+
+    & form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 32px;
+
+        & .frame {
+            display: flex;
+            gap: 16px;
+
+            & .input-user {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                gap: 8px;
+
+                & input, textarea {
+                    padding: 11px 16px;
+                    background-color: transparent;
+                    border: 1px solid #cacaca;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    outline: none;
+                }
+
+                & input::placeholder, textarea::placeholder {
+                    color: #fff;
+                }
+
+                & input:disabled, textarea:disabled {
+                    opacity: 0.5;
+                }
+
+                & textarea {
+                    width: 100%;
+                    resize: none;
+                }
+            }
+
+            & #text-area {
+                    width: 100%;
+            }
+        }
+
+        & input[type = "button"] {
+            background-color: #07729c;
+            padding: 11px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 269px;
+            margin: auto;
+            margin-top: 15px;
+            transition: .3s;
+            cursor: pointer;
+        }
+
+        & input[type = "button"]:hover {
+            background-color: #2a8cb3;
+        }
+    }
+}
